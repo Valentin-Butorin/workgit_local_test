@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var question1 = "Кто его раздевает, тот слезы проливает.";
+	var question2 = "Этот плод едва обнимешь, если слаб, то не поднимешь,\nНа куски его порежь, мякоть красную поешь.";
+	var question3 = "Этот фрукт на вкус хорош\nИ на лампочку похож.";
+	var rightAnswer1 = "лук";
+	var altRightAnswer1 = "Лук";
+	var rightAnswer2 = "арбуз";
+	var altRightAnswer2 = "Арбуз";
+	var rightAnswer3 = "груша";
+	var altRightAnswer3 = "Груша";
+	var i = 0; // счетчик правильных ответов
+
+	var userAnswer = prompt(question1);
+
+	if(rightAnswer1 == userAnswer || altRightAnswer1 == userAnswer){
+		alert("Поздравляем, это правильный ответ!");
+		i += 1;
+	} else {
+		alert("Это неправильный ответ.");
+	}
+
+	userAnswer = prompt(question2);
+
+	if(rightAnswer2 == userAnswer || altRightAnswer2 == userAnswer){
+		alert("Поздравляем, это правильный ответ!");
+		i += 1;
+	} else {
+		alert("Это неправильный ответ.");
+	}
+
+	userAnswer = prompt(question3);
+
+	if(rightAnswer3 == userAnswer || altRightAnswer3 == userAnswer){
+		alert("Поздравляем, это правильный ответ!");
+		i += 1;
+	} else {
+		alert("Это неправильный ответ.");
+	}
+
+	alert("У вас " + i + " правильных ответов.");
+
+</script>
